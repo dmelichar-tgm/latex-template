@@ -1,7 +1,7 @@
 LaTex Template
 ====================
 
-This folder includes a LaTeX template which will probably be used for a lot things in the upcoming year. It also includes a script which compiles the given .tex file into a PDF in a neat manner. The only requirement for this to work is a functional LaTeX set up - for installation instructions see below.
+This folder includes a LaTeX template which grants the basis for practically any document. It also includes a script which compiles the given ´document.tex´ file into a PDF in a neat manner. The only requirement for this to work is a functional LaTeX set up - for installation instructions see below.
 
 Please note that *some* knowledge of (La)TeX is required
 
@@ -10,34 +10,41 @@ Please note that *some* knowledge of (La)TeX is required
 ## Author(s)
 - Daniel Melichr
 
-## Table of Contents
-- [How to install LaTeX]
-    - [Windows OS]
-        - [TeXLive package - full version])
-        - [Basic MikTeX - TeX  distribution]
-        - [TexStudio - TeX  editor]
-    - [Mac OS X]
-        - [MacTeX - TeX  distribution]
-        - [TexStudio - TeX  editor]
-    - [Unix/Linux]
-        - [TeXLive - TeX  distribution]
-            - [Getting the distribution]
-            - [Installation]
-            - [For 32bit OS]
-            - [For 64bit OS]
-            - [Fedora/RedHat/CentOS]
-            - [SUSE]
-- [Information regarding the template]
-    - [Compiling a TeX ]
-        - [Shell script for PDFLaTeX (Unix/Linux)]
-        - [Using the batch file on Windows OS (PDFLaTeX)]  
+
+## Table of contents
+<!-- MarkdownTOC depth=0 -->
+
+- [How to install LaTeX][Installation]
+	- [Windows OS][Windows]
+		- [TeXLive package - full version][TeXLive-Windows]
+		- [Basic MikTeX - TeX  distribution][Basic-MikTeX-Windows]
+		- [TeXStudio - TeX  editor][TeXStudio-Windows]
+	- [Mac OS X][OSX]
+		- [MacTeX - TeX  distribution][MacTeX-OSX]
+		- [TeXStudio - TeX  editor][TeXStudio-OSX]
+	- [Unix/Linux][Linux]
+		- [TeXLive - TeX  distribution][TeXLive-Linux]
+			- Getting the distribution:
+			- Installation
+			- For 32bit OS
+			- For 64bit OS
+			- Fedora/RedHat/CentOS:
+			- SUSE:
+			- Debian/Ubuntu:
+- [Compiling a document][Compiling]
+	- [Shell script for PDFLaTeX (Unix/Linux)][Shellscript]
+	- [Using the batch file on Windows OS (PDFLaTeX)][Batchfile]
+
+<!-- /MarkdownTOC -->
+
+ 
 
 
-## How to install LaTeX
+## How to install LaTeX [Installation]
 
-### Windows OS
+### Windows OS [Windows]
 
-#### TeXLive package - full version
+#### TeXLive package - full version [TeXLive-Windows]
 
 1.  Download the TeXLive ISO (2.2GB) from
     [https://www.tug.org/texlive/](https://www.tug.org/texlive/)
@@ -53,9 +60,8 @@ Please note that *some* knowledge of (La)TeX is required
 
 5.  Open your virtual drive and run setup.pl
 
-or
 
-#### Basic MikTeX - TeX  distribution
+#### Basic MikTeX - TeX  distribution [Basic-MikTeX-Windows]
 
 1.  Download Basic-MiKTeX(32bit or 64bit) from
     [http://miktex.org/download](http://miktex.org/download)
@@ -66,7 +72,7 @@ or
 
 4.  Select or search for packages to install
 
-### TexStudio - TeX  editor
+#### TeXStudio - TeX  editor [TeXStudio-Windows]
 
 1.  Download TexStudio from
     [http://texstudio.sourceforge.net/#downloads](http://texstudio.sourceforge.net/#downloads)
@@ -76,16 +82,16 @@ or
 
 
 
-## Mac OS X
+### Mac OS X [OSX]
 
-#### MacTeX - TeX  distribution
+#### MacTeX - TeX  distribution [MacTeX-OSX]
 
 1.  Download the file from
     [https://www.tug.org/mactex/](https://www.tug.org/mactex/)
 
 2.  Extract and double click to run the installer. It does the entire configuration, sit back and relax.
 
-#### TexStudio - TeX  editor
+#### TeXStudio - TeX  editor [TeXStudio-OSX]
 
 1.  Download TexStudio from
     [http://texstudio.sourceforge.net/#downloads](http://texstudio.sourceforge.net/#downloads)
@@ -95,9 +101,9 @@ or
 
 
 
-## Unix/Linux
+### Unix/Linux [Linux]
 
-#### TeXLive - TeX  distribution
+#### TeXLive - TeX  distribution [TeXLive-Linux]
 
 ##### Getting the distribution:
 
@@ -165,19 +171,19 @@ For Bourne-compatible shells such as bash, and using Intel x86 GNU/Linux and a d
     sudo apt-get install psutils
 ```
 
-## Compiling a TeX
-### Shell script for PDFLaTeX (Unix/Linux)
+## Compiling a document [Compiling]
+### Shell script for PDFLaTeX (Unix/Linux) [Shellscript]
 
-Usage: `sh ./compile-thesis.sh [OPTIONS] [filename]`
+Usage: `sh ./compile.sh [OPTIONS]`
 
-[option]  compile: Compiles the PhD Thesis
+[option]  compile: Compiles the document
 
-[option]  clean: removes temporary files - no filename required
+[option]  clean: removes temporary files
 
-### Using the batch file on Windows OS (PDFLaTeX)
+### Using the batch file on Windows OS (PDFLaTeX) [Batchfile]
 
 *    Open command prompt and navigate to the directory with the tex file. Run:
 
-    `compile-thesis-windows.bat`.
+    `compile-windows.bat`.
 
-*    Alternatively, double click on `compile-thesis-windows.bat`
+*    Alternatively, double click on `compile-windows.bat`
